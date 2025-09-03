@@ -1,3 +1,41 @@
+/* About Us section styles */
+.about-container {
+  display: flex; /* Arrange children in a row */
+  justify-content: space-between; /* Space between columns */
+  align-items: flex-start; /* Align items to the top */
+  margin: 40px 0; /* Space above and below */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.about-left {
+  flex: 1;
+  margin-right: 20px; /* Space between columns */
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .about-left, .about-right {
+    margin: 0 0 20px 0;
+  }
+}
 /* General styles */
 body {
   margin: 0;
@@ -53,6 +91,7 @@ nav a:hover {
 }
 
 .hero h1 {
+  color: #4357AD;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
